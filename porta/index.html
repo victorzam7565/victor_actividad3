@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Portafolio victor zambrano</title>
+     <link rel="stylesheet" href="./css/estilo.css">
 </head>
 <body>
      <section id="inicio">
-          <nav>
+          <nav class="navegacion"></nav>
                <ul>
                     <li><a href="#sobreMi">Pasion por la electronica<electronica class=""></electronica></a></li>
                     <li><a href="#proyectos">Diseño electronico...</a></li>
@@ -16,6 +17,7 @@
           </nav>
           <div id="portada">
                <img src="./img/trabajando.jpg" alt="gente trabajanditoto">
+               <h2>Victor Zambrano</h2>
                <h3> Desarrollador Frontend </h3>
           </div>
      </section>
@@ -39,19 +41,20 @@
                <legend> Pon tu Informacion aqui</legend>
           <h2>llena el campo de datos..</h2>
           <h3>Escríbe estoy para ayudarte</h3>
-          <form>
-               <label for="nombre"> Pon Tu Nombre amigo</label>
-               <input type="text" id="nombre" placeholder="Nombre y apellido">
-               <label for="email">E-mail</label>
-               <input type="email" id="email" placeholder="tu correo aqui">
-               <label for="asunto"> Escribe tu Asunto</label>
-               <input type="text" id="asunto" placeholder="Asunto urgente">
-               <label for="mensaje">Escribe tu Mensaje</label>
-               <textarea name="mensaje" id="mensaje" cols="30" rows="1"></textarea>
-               <input type="submit" placeholder="Mensaje urgente">
-          </form>
-     </section>
-     <footer>
+     </div>
+     <form>
+          <div class="filaSuperior">
+               <input type="text" id="nombre" placeholder="Nombre">
+               <input type="email" id="email" placeholder="ejemplo@correo.com">
+               <input type="text" id="asunto" placeholder="Asunto">
+          </div>
+          <div class="filaInferior">
+               <textarea name="mensaje" id="mensaje" cols="30" rows="1" placeholder="Mensaje"></textarea>
+          </div>
+          <input id="btnEnviar" type="submit">
+     </form>
+</section>
+<footer>
           <p>©Copyright 2020 victor zam. portafolio nuevo con datos para el interesado, derechos blenio.</p>
      </footer>
 </body>
